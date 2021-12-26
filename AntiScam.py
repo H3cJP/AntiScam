@@ -10,7 +10,7 @@ async def AntiScam(message, bot, whitelist, muted_role, verified_role, logs_chan
     global message_content, last_message, last_message_content, spam_counter
     message_content = f'{message.author.id}: {message.content}'
     message_content = message_content.replace("'", "`")
-
+    mentions = message.raw_mentions
     # AntiScam-System
     if message_content == last_message_content and message.content != '' and message.author.id not in whitelist:
         spam_counter += 1
@@ -20,7 +20,7 @@ async def AntiScam(message, bot, whitelist, muted_role, verified_role, logs_chan
         last_message_content = message_content
         spam_counter = 0
 
-    if len(message.mentions) > 10 and message.author.id not in whitelist:
+    if len(mentions) > 10 and message.author.id not in whitelist:
         await message.delete()
         spam_counter = 2
 
