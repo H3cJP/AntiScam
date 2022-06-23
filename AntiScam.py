@@ -12,6 +12,8 @@ async def AntiScam(message, bot, whitelist, muted_role, verified_role, logs_chan
     message_content = message_content.replace("'", "`")
     mentions = message.raw_mentions
     # AntiScam-System
+    if not message.guild:
+        return
     if message_content == last_message_content and message.content != '' and message.author.id not in whitelist:
         spam_counter += 1
         await message.delete()
