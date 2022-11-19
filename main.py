@@ -1,12 +1,13 @@
-from discord.ext import commands
 from AntiScam import AntiScam
 
 whitelist = [] # Here you can add the IDs of the users allowed to bypass the AntiScam system.
 logs_channel = None # Here you can add the ID of the channel where the logs will be sent.
 
-bot = discord.Bot()
+intents = discord.Intents.default()
+intents.message_content = True
+bot = discord.Client(intents=intents)
 
-@bot.event()
+@bot.event
 async def on_message(message):
     await AntiScam(message, bot = bot, whitelist = whitelist, muted_role='Muted', verified_role='Verified', logs_channel=logs_channel) # Here you can change the names of the roles.
 
