@@ -1,3 +1,4 @@
+import discord
 from AntiScam import AntiScam
 
 whitelist = [] # Here you can add the IDs of the users allowed to bypass the AntiScam system.
