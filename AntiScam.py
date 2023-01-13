@@ -1,10 +1,7 @@
-import discord
-
 message_content = ''
 last_message = ''
 last_message_content = ''
 spam_counter = 0
-
 
 async def AntiScam(message, bot, whitelist, muted_role, verified_role, logs_channel):
     global message_content, last_message, last_message_content, spam_counter
