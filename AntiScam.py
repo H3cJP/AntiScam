@@ -1,3 +1,5 @@
+import discord
+
 message_content = ''
 last_message = ''
 last_message_content = ''
