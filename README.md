@@ -9,7 +9,7 @@ More info about how to install discord.py is in their docs: https://discordpy.re
 If you found any trouble, you can report it at the issues section.  
 
 If you don't know how to create a discord bot or how to manage server permissions, here is a video made by S4vitar of how to do that: https://youtu.be/k0e_AnL5UeE  
-Thanks for S4vitar and all those Hack4u moderators who helped me with the testing and for improbing this bot with the aim of stoping this type of scam on discord servers!  
+Thanks to S4vitar and all those Hack4u moderators who helped me with the testing and for improbing this bot with the aim of stoping this type of scam on discord servers!  
 
 # Update
 Because of a discord api modification, you might need to enable the "Message Content Intent" option on the Discord Developer Portal if you wanna have no problems.  
