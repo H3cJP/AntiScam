@@ -4,7 +4,7 @@ Discord bot code to stop users that are scamming with fake messages of free disc
 # How to use
 The simplest bot you can create using this repo is just running the AntiScam.py file with python3 (after creating the bot at the discord developers portal and replacing <bot-token> with the token).  
 
-To run the bot, the PyCord module must be installed (on linux, `pip3 install discord.py`).  
+To run the bot, the discord.py module must be installed (on linux, `pip3 install discord.py`).  
 More info about how to install discord.py is in their docs: https://discordpy.readthedocs.io/en/stable/intro.html  
 If you found any trouble, you can report it at the issues section.  
 
